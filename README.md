@@ -1,5 +1,8 @@
 # SnapCode 📸
 
+[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/selcuksarikoz.instantsnapcode?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=selcuksarikoz.instantsnapcode)
+[![Open VSX](https://img.shields.io/open-vsx/v/selcuksarikoz/instantsnapcode?label=Open%20VSX)](https://open-vsx.org/extension/selcuksarikoz/instantsnapcode)
+
 Capture beautiful, high-resolution screenshots of your code instantly. Wrap your code in a sleek macOS, Windows, or Linux window frame, perfectly tailored for sharing on social media, blogs, or documentation.
 
 ![SnapCode Demo](demo.jpg)
@@ -37,8 +40,11 @@ Customize your screenshots easily in VS Code Settings (`Ctrl+,` or `Cmd+,`) by s
 
 ## 📥 Installation
 
+- **Visual Studio Marketplace:** [Instant Snap Your Code](https://marketplace.visualstudio.com/items?itemName=selcuksarikoz.instantsnapcode)
+- **Open VSX Registry:** [Instant Snap Your Code](https://open-vsx.org/extension/selcuksarikoz/instantsnapcode)
+
 1. Open VS Code.
-2. Press `Ctrl+P`, type `ext install snapcode`.
+2. Press `Ctrl+P`, type `ext install selcuksarikoz.instantsnapcode`.
 3. (Or) Build from source and copy to your `.vscode/extensions` folder.
 
 ## 📄 License
