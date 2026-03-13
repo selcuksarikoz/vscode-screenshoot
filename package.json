@@ -1,0 +1,166 @@
+{
+  "name": "snapcode",
+  "displayName": "SnapCode",
+  "description": "Capture beautiful screenshots of your code wrapped in a macOS window frame.",
+  "version": "0.1.0",
+  "publisher": "selcuksarikoz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selcuksarikoz/vscode-screenshoot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/selcuksarikoz/vscode-screenshoot/issues"
+  },
+  "homepage": "https://github.com/selcuksarikoz/vscode-screenshoot#readme",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:python",
+    "onLanguage:go",
+    "onLanguage:rust",
+    "onLanguage:java",
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onLanguage:csharp",
+    "onLanguage:php",
+    "onLanguage:ruby",
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:less",
+    "onLanguage:json",
+    "onLanguage:yaml",
+    "onLanguage:markdown",
+    "onLanguage:shellscript",
+    "onLanguage:sql",
+    "onLanguage:xml",
+    "onLanguage:swift",
+    "onLanguage:kotlin",
+    "onLanguage:dart",
+    "onLanguage:vue",
+    "onLanguage:svelte",
+    "onLanguage:astro",
+    "onLanguage:mdx",
+    "onLanguage:graphql",
+    "onLanguage:dockercompose",
+    "onLanguage:makefile",
+    "onLanguage:prisma",
+    "onLanguage:jinja",
+    "onLanguage:twig",
+    "onLanguage:blade",
+    "onLanguage:pug",
+    "onLanguage:stylus"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "snapcode.capture",
+        "title": "📸 Screenshot",
+        "category": "SnapCode"
+      }
+    ],
+    "configuration": {
+      "title": "SnapCode",
+      "properties": {
+        "snapCode.windowStyle": {
+          "type": "string",
+          "enum": [
+            "macos",
+            "windows",
+            "linux",
+            "none"
+          ],
+          "default": "macos",
+          "description": "The style of the window frame."
+        },
+        "snapCode.background": {
+          "type": "string",
+          "enum": [
+            "bg-1",
+            "bg-2",
+            "bg-3",
+            "bg-4",
+            "bg-5"
+          ],
+          "default": "bg-1",
+          "description": "Select the background image."
+        },
+        "snapCode.aspectRatio": {
+          "type": "string",
+          "enum": [
+            "16:9",
+            "4:3",
+            "1:1",
+            "21:9",
+            "9:16"
+          ],
+          "default": "16:9",
+          "description": "Aspect ratio of the generated image."
+        },
+        "snapCode.fontSize": {
+          "type": "number",
+          "default": 14,
+          "description": "Font size of the code."
+        },
+        "snapCode.theme": {
+          "type": "string",
+          "enum": [
+            "monokai",
+            "github-dark",
+            "dracula",
+            "nord",
+            "solarized-dark",
+            "tomorrow-night-bright"
+          ],
+          "default": "monokai",
+          "description": "Syntax highlighting theme."
+        },
+        "snapCode.outputFormat": {
+          "type": "string",
+          "enum": [
+            "jpg",
+            "png"
+          ],
+          "default": "jpg",
+          "description": "Output image format."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vscode/vsce": "^2.19.0",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.11"
+  }
+}

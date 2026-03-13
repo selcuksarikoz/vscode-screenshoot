@@ -1,0 +1,9 @@
+node_modules/
+dist/
+out/
+screenshots/
+snapcode-*.jpg
+snapcode-*.png
+snapcode-*.vsix
+.vscode-test/
+.DS_Store

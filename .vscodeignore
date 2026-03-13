@@ -1,0 +1,17 @@
+.vscode/**
+.vscode-test/**
+out/**
+src/**
+.gitignore
+.vscodeignore
+tsconfig.json
+vsc-extension-quickstart.md
+webpack.config.js
+**/*.map
+**/*.ts
+node_modules/**
+!node_modules/html-to-image/**
+screenshots/
+snapcode-*.jpg
+snapcode-*.png
+demo.jpg
