@@ -1,6 +1,6 @@
 {
-  "name": "snapcode",
-  "displayName": "SnapCode",
+  "name": "instantsnapcode",
+  "displayName": "Instant Snap Your Code",
   "description": "Capture beautiful screenshots of your code wrapped in a macOS window frame.",
   "version": "0.1.0",
   "publisher": "selcuksarikoz",

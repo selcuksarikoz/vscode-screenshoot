@@ -4,6 +4,6 @@ out/
 screenshots/
 snapcode-*.jpg
 snapcode-*.png
-snapcode-*.vsix
+instantsnapcode-*.vsix
 .vscode-test/
 .DS_Store
